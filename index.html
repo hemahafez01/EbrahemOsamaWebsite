@@ -11,7 +11,11 @@
 <link rel="stylesheet" href="footer.css">
 <body>
     <nav>
-        <ol>
+        <input id="menu-toggle" type="checkbox" />
+        <label for="menu-toggle" class="menu-button-container">
+            <div class="menu-button"></div>
+        </label>
+        <ol class="menu">
             <li class="here"><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact</a></li>
@@ -20,8 +24,8 @@
     </nav>
     <main>
         <img src="./img/home1.png" alt="cartoon programmer">
-        <h2>I’m Ebrahem Osama
-            A <span>FrontEnd Developer</span> and <span>Structural Engineer</span> </h2>
+        <h2>I’m <span class="name">Ebrahem Osama</span>
+        </br> <span>FrontEnd Developer</span> </br>and</br> <span>Structural Engineer</span> </h2>
     </main>
     <footer>
         <h4>Copyright © 2021 All rights reserved.</h4>

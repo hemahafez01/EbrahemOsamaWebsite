@@ -22,3 +22,44 @@ div>h2>span{
     font-weight: bolder;
     color: #FDB827;
 }
+@media(orientation:portrait){
+    main{
+        width: 100%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+    margin: auto;
+    }
+    main>h3{
+        width: 90vw;
+        margin: 5rem auto 0 auto;
+        color: #FDB827;
+        font-family: fantasy;
+        font-size: 2rem;
+        font-weight: lighter;
+        /* margin-top: 5rem; */
+        text-align: center;
+        line-height: 2rem;
+        letter-spacing: .1rem;
+        word-spacing: .1rem;
+    }
+    main>ul{
+        list-style-type: square;
+    }
+    main>ul>li{
+        margin-top: 2vh;
+        font-size: 1.25rem;
+    }
+    main>a{
+        width: 70vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid #625656 2px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-weight: bold;
+        background-color:#FDB827;
+        color:#000;
+    }
+}

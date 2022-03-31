@@ -1,8 +1,4 @@
 main{
-    width: 70%;
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,12 +6,6 @@ main{
 img{
     width: 270px;
     height: 470px;
-}
-main>div{
-    width: 70%;
-}
-main>div>h2{
-    font-size: 4em;
 }
 div>a, div>a>button{
     all:unset;
@@ -38,4 +28,64 @@ main>div>a:nth-last-child(1)>button{
     font-weight: bolder;
     background: rgba(255, 255, 255, 0.13);
     border-radius: 8px;
+}
+td:nth-child(2){
+    padding-left: 1rem;
+}
+    td>a{
+        color: #fff;
+        text-decoration: none;
+}
+@media(orientation: landscape){
+    main{
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+    main>div{
+        width: 70%;
+    }
+    main>div>h2{
+        font-size: 4em;
+    }
+    
+}
+@media(orientation:portrait){
+    main{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+    main>img{
+        position: absolute;
+        z-index: -1;
+        opacity: .5;
+    }
+    main>div{
+        text-align: center;
+    }
+    div>h2{
+        margin-top:3rem;
+        font-size: 2rem;
+    }
+    div>p{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    div>a{
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    table{
+        /* align-self: center;
+        align-items: center; */
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
